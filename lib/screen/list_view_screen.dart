@@ -12,7 +12,6 @@ class _ListViewScreenState extends State<ListViewScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-          drawer: Drawer(),
           appBar: AppBar(
             title: Text(
               "List View Screen",

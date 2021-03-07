@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen/list_view_screen.dart';
 
 class FormScreen extends StatefulWidget {
   FormScreen({Key key}) : super(key: key);
@@ -13,7 +12,6 @@ class _FormScreenState extends State<FormScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        drawer: Drawer(),
         appBar: AppBar(
           title: Text(
             "Form Screen",
