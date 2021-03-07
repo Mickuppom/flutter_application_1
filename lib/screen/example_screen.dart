@@ -48,8 +48,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Container(
-                            width: 150,
-                            height: 150,
+                            width: 120,
+                            height: 120,
                             color: Colors.red,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -63,8 +63,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
                             ),
                           ),
                           Container(
-                            width: 150,
-                            height: 150,
+                            width: 120,
+                            height: 120,
                             color: Colors.green,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -82,8 +82,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Container(
-                            width: 150,
-                            height: 150,
+                            width: 120,
+                            height: 120,
                             color: Colors.blue,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -97,8 +97,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
                             ),
                           ),
                           Container(
-                            width: 150,
-                            height: 150,
+                            width: 120,
+                            height: 120,
                             color: Colors.orange,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
