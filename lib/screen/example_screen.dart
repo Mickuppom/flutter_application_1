@@ -29,10 +29,10 @@ class _ExampleScreenState extends State<ExampleScreen> {
                       itemBuilder: (BuildContext context) {
                         return [
                           PopupMenuItem(
-                            child: Text("Wifi"),
+                            child: Text("Title 1"),
                           ),
                           PopupMenuItem(
-                            child: Text("Bluetooth"),
+                            child: Text("Title 2"),
                           )
                         ];
                       },
