@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/form_screen.dart';
 import 'package:flutter_application_1/screen/list_view_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -51,11 +52,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   );
                 },
-                child: Text("Hit Here"),
+                child: Text("List View"),
               ),
               TextButton(
-                onPressed: () {},
-                child: Text("Hit Again"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FormScreen(),
+                    ),
+                  );
+                },
+                child: Text("Form"),
               ),
             ],
           ),
