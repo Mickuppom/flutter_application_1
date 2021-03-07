@@ -19,26 +19,36 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: Center(
-          child: Row(
+          child: Column(
             children: [
               Container(
-                  width: 119,
-                  height: 119,
-                  color: Colors.red,
-                  child: Text("CAT")),
+                width: 150,
+                height: 150,
+                color: Colors.red,
+                child: Text("CAT"),
+              ),
               Container(
-                width: 119,
-                height: 119,
+                width: 150,
+                height: 150,
                 color: Colors.amberAccent,
                 child: Image.asset(
                   'assets/images/cat.jpg',
                 ),
               ),
               Container(
-                  width: 119,
-                  height: 119,
-                  color: Colors.green,
-                  child: Text("CAT")),
+                width: 150,
+                height: 150,
+                color: Colors.green,
+                child: Text("CAT"),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Hit Here"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("Hit Again"),
+              ),
             ],
           ),
         ),
