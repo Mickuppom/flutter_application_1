@@ -22,7 +22,28 @@ class _ListViewScreenState extends State<ListViewScreen> {
             children: [
               ListTile(
                 title: Text("Title 1"),
-              )
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
+              ListTile(
+                title: Text("Title 1"),
+              ),
             ],
           )),
     );
