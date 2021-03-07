@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/example_screen.dart';
 import 'package:flutter_application_1/screen/form_screen.dart';
 import 'package:flutter_application_1/screen/list_view_screen.dart';
 
@@ -64,6 +65,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
                 child: Text("Form"),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ExampleScreen(),
+                    ),
+                  );
+                },
+                child: Text("Example"),
               ),
             ],
           ),
