@@ -21,7 +21,25 @@ class _ExampleScreenState extends State<ExampleScreen> {
         body: Center(
           child: Column(
             children: [
-              Text("Medicines"),
+              Container(
+                child: Row(
+                  children: [
+                    Text("Medicines"),
+                    PopupMenuButton(
+                      itemBuilder: (BuildContext context) {
+                        return [
+                          PopupMenuItem(
+                            child: Text("Wifi"),
+                          ),
+                          PopupMenuItem(
+                            child: Text("Bluetooth"),
+                          )
+                        ];
+                      },
+                    ),
+                  ],
+                ),
+              ),
               Container(
                 child: Column(
                   children: [
@@ -30,13 +48,29 @@ class _ExampleScreenState extends State<ExampleScreen> {
                         width: 150,
                         height: 150,
                         color: Colors.red,
-                        child: Text("Morning"),
+                        child: Column(
+                          children: [
+                            IconButton(
+                              icon: Icon(Icons.medical_services),
+                              onPressed: () {},
+                            ),
+                            Text("Morning"),
+                          ],
+                        ),
                       ),
                       Container(
                         width: 150,
                         height: 150,
                         color: Colors.green,
-                        child: Text("Afternoon"),
+                        child: Column(
+                          children: [
+                            IconButton(
+                              icon: Icon(Icons.medical_services),
+                              onPressed: () {},
+                            ),
+                            Text("Afternoon"),
+                          ],
+                        ),
                       ),
                     ]),
                     Row(children: [
@@ -44,13 +78,29 @@ class _ExampleScreenState extends State<ExampleScreen> {
                         width: 150,
                         height: 150,
                         color: Colors.blue,
-                        child: Text("Everning"),
+                        child: Column(
+                          children: [
+                            IconButton(
+                              icon: Icon(Icons.medical_services),
+                              onPressed: () {},
+                            ),
+                            Text("Everning"),
+                          ],
+                        ),
                       ),
                       Container(
                         width: 150,
                         height: 150,
                         color: Colors.orange,
-                        child: Text("Night"),
+                        child: Column(
+                          children: [
+                            IconButton(
+                              icon: Icon(Icons.medical_services),
+                              onPressed: () {},
+                            ),
+                            Text("Night"),
+                          ],
+                        ),
                       ),
                     ]),
                   ],
