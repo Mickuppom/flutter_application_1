@@ -12,7 +12,6 @@ class _ExampleScreenState extends State<ExampleScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        drawer: Drawer(),
         appBar: AppBar(
           title: Text(
             "Example Screen",
@@ -23,6 +22,7 @@ class _ExampleScreenState extends State<ExampleScreen> {
             children: [
               Container(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Medicines"),
                     PopupMenuButton(
@@ -42,67 +42,76 @@ class _ExampleScreenState extends State<ExampleScreen> {
               ),
               Container(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Row(children: [
-                      Container(
-                        width: 150,
-                        height: 150,
-                        color: Colors.red,
-                        child: Column(
-                          children: [
-                            IconButton(
-                              icon: Icon(Icons.medical_services),
-                              onPressed: () {},
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            width: 150,
+                            height: 150,
+                            color: Colors.red,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.medical_services),
+                                  onPressed: () {},
+                                ),
+                                Text("Morning"),
+                              ],
                             ),
-                            Text("Morning"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        width: 150,
-                        height: 150,
-                        color: Colors.green,
-                        child: Column(
-                          children: [
-                            IconButton(
-                              icon: Icon(Icons.medical_services),
-                              onPressed: () {},
+                          ),
+                          Container(
+                            width: 150,
+                            height: 150,
+                            color: Colors.green,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.medical_services),
+                                  onPressed: () {},
+                                ),
+                                Text("Afternoon"),
+                              ],
                             ),
-                            Text("Afternoon"),
-                          ],
-                        ),
-                      ),
-                    ]),
-                    Row(children: [
-                      Container(
-                        width: 150,
-                        height: 150,
-                        color: Colors.blue,
-                        child: Column(
-                          children: [
-                            IconButton(
-                              icon: Icon(Icons.medical_services),
-                              onPressed: () {},
+                          ),
+                        ]),
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            width: 150,
+                            height: 150,
+                            color: Colors.blue,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.medical_services),
+                                  onPressed: () {},
+                                ),
+                                Text("Everning"),
+                              ],
                             ),
-                            Text("Everning"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        width: 150,
-                        height: 150,
-                        color: Colors.orange,
-                        child: Column(
-                          children: [
-                            IconButton(
-                              icon: Icon(Icons.medical_services),
-                              onPressed: () {},
+                          ),
+                          Container(
+                            width: 150,
+                            height: 150,
+                            color: Colors.orange,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.medical_services),
+                                  onPressed: () {},
+                                ),
+                                Text("Night"),
+                              ],
                             ),
-                            Text("Night"),
-                          ],
-                        ),
-                      ),
-                    ]),
+                          ),
+                        ]),
                   ],
                 ),
               ),
