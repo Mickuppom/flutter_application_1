@@ -31,9 +31,17 @@ class _FormScreenState extends State<FormScreen> {
                     labelText: "E-mail",
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text("SAVE"),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text("SAVE"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text("RESET"),
+                    ),
+                  ],
                 ),
               ],
             ),
