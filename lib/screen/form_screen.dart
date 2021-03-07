@@ -18,7 +18,13 @@ class _FormScreenState extends State<FormScreen> {
           ),
         ),
         body: Center(
-          child: Text("This is form screen"),
+          child: Form(
+            child: Column(
+              children: [
+                TextFormField(),
+              ],
+            ),
+          ),
         ),
       ),
     );
