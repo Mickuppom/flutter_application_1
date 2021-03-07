@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/list_view_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
         drawer: Drawer(),
         appBar: AppBar(
           title: Text(
-            "HomeScreen",
+            "Home Screen",
           ),
         ),
         body: Center(
@@ -42,7 +43,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text("CAT"),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ListViewScreen(),
+                    ),
+                  );
+                },
                 child: Text("Hit Here"),
               ),
               TextButton(

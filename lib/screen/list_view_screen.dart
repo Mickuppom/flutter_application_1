@@ -12,14 +12,19 @@ class _ListViewScreenState extends State<ListViewScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        drawer: Drawer(),
-        appBar: AppBar(
-          title: Text(
-            "HomeScreen",
+          drawer: Drawer(),
+          appBar: AppBar(
+            title: Text(
+              "List View Screen",
+            ),
           ),
-        ),
-        body: 
-      ),
+          body: ListView(
+            children: [
+              ListTile(
+                title: Text("Title 1"),
+              )
+            ],
+          )),
     );
   }
 }
