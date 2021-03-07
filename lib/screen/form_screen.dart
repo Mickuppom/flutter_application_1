@@ -21,7 +21,20 @@ class _FormScreenState extends State<FormScreen> {
           child: Form(
             child: Column(
               children: [
-                TextFormField(),
+                TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "Name",
+                  ),
+                ),
+                TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "E-mail",
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text("SAVE"),
+                ),
               ],
             ),
           ),
